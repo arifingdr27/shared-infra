@@ -40,6 +40,18 @@ networks:
 
 DB `splitbill` dibuat otomatis saat volume Postgres pertama kali diinisialisasi (`postgres/init/01-create-databases.sql`).
 
+## Migrator (schema per project)
+
+Satu folder per aplikasi di `migrator/<nama-project>/`.
+
+```bash
+./migrator/migrate.sh splitbill up
+# atau
+make migrate PROJECT=splitbill
+```
+
+Panduan lengkap: [`migrator/README.md`](migrator/README.md)
+
 ## Persistensi
 
 | Volume | Isi |
