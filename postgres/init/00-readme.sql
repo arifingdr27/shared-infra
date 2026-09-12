@@ -1,0 +1,2 @@
+-- Optional notes (no-op). Real DB creates are in 01-create-databases.sql
+-- Add more: CREATE DATABASE other_app;
