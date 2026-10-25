@@ -1,0 +1,4 @@
+ALTER TABLE shares
+    ADD COLUMN IF NOT EXISTS code TEXT;
+
+CREATE UNIQUE INDEX IF NOT EXISTS uq_shares_code ON shares (code);

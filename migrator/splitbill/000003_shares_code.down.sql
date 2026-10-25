@@ -1,0 +1,2 @@
+DROP INDEX IF EXISTS uq_shares_code;
+ALTER TABLE shares DROP COLUMN IF EXISTS code;
